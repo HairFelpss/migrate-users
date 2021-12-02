@@ -21,7 +21,6 @@ const URL = "";
           name: name.split(";")[4],
           email: name.split(";")[5],
           password: Math.floor(Math.random() * 1000000000).toString(),
-          noNotification: true,
         }));
 
         for (const [index, user] of users.entries()) {
