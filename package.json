@@ -1,0 +1,33 @@
+{
+  "name": "migrate-users",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Felipe Alves",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon",
+    "build": "rimraf dist && tsc",
+    "start": "NODE_ENV=production node .",
+    "format": "prettier . --write",
+    "lint": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.3.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.1.2",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "convert-csv-to-json": "^1.3.1",
+    "csv-parser": "^3.0.0"
+  }
+}
